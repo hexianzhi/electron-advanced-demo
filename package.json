@@ -1,17 +1,24 @@
 {
-    "name": "3-hello-electron",
-    "version": "1.0.0",
-    "description": "",
-    "main": "main.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "electron ."
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "electron": "^15.3.0",
-        "ffi-napi": "^4.0.3"
-    }
+  "name": "3-hello-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "postinstall": " electron-builder install-app-deps  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^15.3.0",
+    "electron-debug": "^3.2.0",
+    "ffi-napi": "^4.0.3",
+    "sequelize": "^7.0.0-alpha.3",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.14.5"
+  }
 }
